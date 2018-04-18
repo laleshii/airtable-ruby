@@ -5,7 +5,7 @@ module Airtable
       override_attributes!(attrs)
     end
 
-    def created_at; Time.parse(@attrs["created_at"]); end
+    def created_at; Time.parse(@attrs["createdTime"]); end
 
     def id; @attrs["id"]; end
     def id=(val); @attrs["id"] = val; end
